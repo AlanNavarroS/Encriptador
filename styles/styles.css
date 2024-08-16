@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+:root{
+    --colorPrimario: #1A3636;
+    --colorSecundario: #40534C;
+    --colorTerciario: #677D6A;
+    --colorHover: #D6BD98;
+    --fuenteAtomSC: "Anton SC", sans-serif;;
+    --fuenteOrbiton: "Orbitron", sans-serif;
+    --fuenteRoboto: "Roboto Mono", monospace;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    padding: 5px 0 2px 2px;
+}
+
+body{
+    width: 1300px;
+    height: 650px;
+    font-family: var(--fuenteAtomSC);
+    color: var(--colorHover);
+    background-image: url("/assets/FondoVerde.jpg");
+}
+
+.baseEncriptador{
+    display: flex;
+    justify-content: space-around;
+}
+
+.baseEncriptadorContenidoBotones{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.baseEncriptadorContenidoBotonesElije{
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--colorHover);
+}
+
+.baseEncriptadorContenidoBotonED{
+    width: 30%;
+    cursor: pointer;
+    background-color: var(--colorPrimario);
+    text-align: center;
+    padding: 21.5px 0px;
+    border-radius: 8px;
+    font-family: var(--fuenteOrbiton);
+    font-weight: 800;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--colorHover);
+    border: 2px solid var(--colorPrimario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.baseEncriptadorContenidoBotonED:hover{
+    padding: 5%;
+    background-color: var(--colorHover);
+    color: var(--colorPrimario);
+}
+
+.baseEncriptadorContenidoAdvertencia{
+    margin-left: 2%;
+    font-family: var(--fuenteRoboto);
+    font-size: 12px;
+    color: var(--colorHover);
+}
+.baseEncriptadorContenidoBienvenidaTexusuario{
+    background-color: var(--colorPrimario);
+    border-color: var(--colorSecundario);
+    font-family: var(--fuenteOrbiton);
+    color: var(--colorHover);
+    border-radius: 20px;
+    margin: 2%;
+    text-align: center;
+    font-size: 1.0015rem;
+    font-weight: 700;
+}
+
+.baseDesencriptador{
+    width: 360px;
+    height: 580px;
+    margin-bottom: 5%;
+    background-color: var(--colorPrimario);
+    border-radius: 30px;
+}
+
+.mostrarEncriptado{
+    font-family: var(--fuenteOrbiton);
+    background-color: var(--colorPrimario);
+    border-color: var(--colorPrimario);
+    color: var(--colorHover);
+    border-radius: 20px;
+    margin: 2%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5%;
+}
+
+.baseDesencriptadorImg{
+    margin: 10%;
+    border-radius: 25% 10%;
+}
+.baseEncriptadorContenidoBotonED{
+    width: 40%;
+    margin: auto;
+    cursor: pointer;
+    background-color: var(--colorSecundario);
+    text-align: center;
+    padding: 21.5px 0px;
+    border-radius: 8px;
+    font-family: var(--fuenteOrbiton);
+    font-weight: 800;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--colorHover);
+    border: 2px solid var(--colorPrimario);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.baseDesencriptadorBotonCopiar:hover{
+    padding: 5%;
+    background-color: var(--colorHover);
+    color: var(--colorPrimario);
+}
+
+footer{
+    margin: auto;
+    background-color: var(--colorTerciario);
+    color: var(--colorHover);
+    font-family: var(--fuenteRoboto);
+    text-align: center;
+}

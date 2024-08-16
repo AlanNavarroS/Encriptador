@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="png" href="assets/iconEncriptador.png">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.png" class="LogoAlura" alt="LogoAlura">
+    </header>
+    <main class="baseEncriptador">
+        <section class="baseEncriptadorContenido">
+            <h1 class="baseEncriptadorContenidoBienvenida">Bienvenido a nuestro encriptador</h1>
+            <textarea class="baseEncriptadorContenidoBienvenidaTexusuario" cols="60" rows="15">Ingrese el texto para encriptar</textarea>
+            <p class="baseEncriptadorContenidoAdvertencia"> <img src="assets/consulta.png"> Solo letras minúsculas y sin acentos</p>
+            <p class="baseEncriptadorContenidoBotonesElije"> Elije una opcion</p>
+            <div class="baseEncriptadorContenidoBotones">
+                <button onclick="botonEncriptar()" class="baseEncriptadorContenidoBotonED">Encriptar</button>
+            </div>
+        </section>
+        <section id="baseDesencriptador" class="baseDesencriptador">
+            <div id="baseDesencriptadorImg">
+                <img class="baseDesencriptadorImg" src="assets/sinTexto.png" alt="No hay texto">
+            </div id="textoEncriptadoHTML" >
+            <textarea class="mostrarEncriptado" cols="20" rows="2">No hay ningun mensaje</textarea>
+            <div>
+                <button onclick="botonDesencriptar()"class="baseEncriptadorContenidoBotonED">Desencriptar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollo por Alan Navarro, Alura Latam y Oracle ONE</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
